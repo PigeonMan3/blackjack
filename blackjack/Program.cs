@@ -91,6 +91,7 @@ while (Spelen == "j" && Tokens > 5)
         {
             Gewonnen = 0;
             Bericht = "DRAW";
+            Tokens += Bet;
         }
         else
         {
@@ -112,6 +113,5 @@ while (Spelen == "j" && Tokens > 5)
     
 }
 Console.Clear();
-Console.WriteLine("tot later !!!");
-Thread.Sleep(2000);
-Environment.Exit(0);
+Console.WriteLine("tot later !!!" + Environment.NewLine + "Punten over: " + Tokens);
+Console.ReadLine();
